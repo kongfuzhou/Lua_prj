@@ -16,7 +16,7 @@ print("查看状态=",coroutine.status(co)); --到这里系挂起状态
 coroutine.resume(co); --变为运行
 
 
-print("查看状态=",coroutine.status(co)); --变为停止
+print("查看状态++++=",coroutine.status(co)); --变为停止
 
 corou1=coroutine.create(
 	function ()
