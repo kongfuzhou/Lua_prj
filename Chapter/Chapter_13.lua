@@ -130,7 +130,7 @@ Window.mt.__index = function (tab,key)
 end;
 
 w = Window.new{x=10,y=20};
-print(w.width); --w不存在width域 lua就会通过__index域的metatable访问 __index metamethod获取缺少的域
+print(w.width); -- w不存在width域 lua就会通过__index域的metatable访问 __index metamethod获取缺少的域
 
 
 --改变默认值
