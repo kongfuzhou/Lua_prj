@@ -105,9 +105,11 @@ print(string.format("n=%o",18))
 
 --字符串查找
 
-str2 = "hello world";
+str2 = "hello,world";
 
-i,j,v =string.find(str2,"lo",2); --从第二个位置开始搜索 返回字符串的开始位置和结束位置 没有匹配返回nil
+i,j,v =string.find(str2,",",0,true); --从第二个位置开始搜索 返回字符串的开始位置和结束位置 没有匹配返回nil
+
+print("i,j,v=",i,j,v)
 
 print(string.sub(str2,i,j));
 

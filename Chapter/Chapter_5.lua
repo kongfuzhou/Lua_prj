@@ -54,5 +54,23 @@ print("----±Õ°ü----");
 print(c1());
 print(c1());
 
+local M = {}
+
+function M:test(a,b)
+	print("arg.n=",arg[1])
+end
+
+
+M:test(10,20)
+
+
+
+
+
+
+
+
+
+
 
 

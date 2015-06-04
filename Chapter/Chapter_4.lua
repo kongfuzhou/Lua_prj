@@ -40,9 +40,30 @@ print(i);
 
 print("-----------------");
 
+idata = false
+
+if idata then
+	print("***************** idata")
+end
+
+tab = {}
+
+table.insert(tab,{type_i=1});
+table.insert(tab,{type_i=2});
+table.insert(tab,{type_i=3});
 
 
 
 
 
+
+function onSorthandler(a,b)
+	return a.type_i < b.type_i
+end
+
+table.sort(tab,onSorthandler)
+
+for k,v in pairs(tab) do
+	print("tab",k,"type_i=",v.type_i)
+end
 
